@@ -11,10 +11,12 @@
 body{
   margin:0;
 }
+/*
 a {
   color: black;
   text-decoration: none;
 }
+*/
 h1 {
   font-size: 45px;
   text-align: center;
@@ -22,18 +24,33 @@ h1 {
   margin:0;
   padding:20px;
 }
-ol{
+ol {
   border-right:1px solid gray;
   width:100px;
   margin:0;
   padding:20px
 }
+#btn1 {
+  border-right:1px solid gray;
+  width:153px;
+}
+#btn1 input[type="button"]{
+  background-color: white;
+  cursor: pointer;
+}
+#btn1 input[type="button"]:hover{
+    color: white;
+    background-color: darkgreen;
+}
 @media(max-width:800px)
 {
   #grid{
     display:block;}
+  #btn1{
+    border-right:none;
+    }
   ol{
     border-right:none;}
-    h1 {
+  h1{
     border-bottom:none;}
 }
